@@ -1,0 +1,1217 @@
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="with=device-width, user-scalable=yes, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <style>
+    html {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background: #f5f5f5;
+    }
+    body {
+      margin: 0;
+    }
+
+    .snd-body {
+      background: #f5f5f5;
+      width: 725px;
+    }
+
+    .snd-container {
+      width: 725px;
+      margin: 0 auto;
+      padding: 0 0 10px 0;
+    }
+
+    .snd-quotation {
+      display: block;
+    }
+
+    .snd-logo-container {
+      width: 100%;
+      /* padding-top: 30px;
+      padding-bottom: 30px; */
+    }
+
+    .snd-logo {
+      width: 100%;
+      max-width: 109px;
+      height: auto;
+      border: 0;
+      display: block;
+    }
+
+    p span {
+      display: block;
+    }
+
+    .snd-divide-y {
+      padding: 0 0 5px 0;
+      border-bottom: 1px solid #333333;
+    }
+
+    .snd-pd-btm-5 {
+      padding: 5px 0 0 0;
+
+    }
+
+    /* Font Size */
+    .snd-text-base {
+      font-size: 1rem;
+      line-height: 1.5rem;
+      color: black;
+    }
+
+    .snd-text-sm {
+      color: #333333;
+      font-size: 12px;
+      line-height: 1.5rem;
+      font-weight: 300px;
+    }
+
+    .snd-margin-bottom {
+      margin-bottom: 30px;
+    }
+
+    .snd-main {
+      padding: 10px 40px;
+      margin: 0 auto;
+      background-color: white;
+
+    }
+
+    .snd-space {
+      height: 40px;
+      line-height: 40px;
+    }
+
+    .snd-title {
+      font-size: 54px;
+      font-weight: 400;
+      line-height: 54px;
+      text-align: left;
+      color: #000000;
+    }
+
+    .snd-border {
+      border-bottom: 1px solid black;
+    }
+
+    .snd-content-gray {
+      font-size: 16px;
+      color: #9E9E9E;
+    }
+
+    .snd-button {
+      width: 100%;
+      padding: 15px 0;
+      border-radius: 14px;
+      text-align: center;
+      background-color: #EA5B21;
+      border: 0px;
+      color: white;
+      cursor: pointer;
+    }
+
+    .snd-card {
+      border: 1px solid rgba(0, 0, 0, 0.26);
+      border-radius: 20px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      padding: 10px;
+    }
+
+    .snd-org-font {
+      color: #EA5B21;
+      font-weight: bold;
+      font-size: 28px;
+    }
+
+    .snd-card-promotion {
+      flex-direction: row;
+      text-align: start;
+      font-weight: 300;
+      background: #FFD8C8;
+      border-radius: 20px;
+      padding: 20px 18px 0 20px;
+    }
+
+    .snd-promotion-content {
+      text-align: start;
+      border-bottom: 1px solid black;
+      padding: 0 0 20px 40px;
+    }
+
+    .snd-promotion-percent {
+      width: 80px;
+    }
+
+    .snd-promotion-text {
+      width: 80%;
+      padding:29px 0px 31px 0px;
+    }
+
+    .snd-row {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 4px;
+    }
+
+    .snd-column {
+      flex: 50%;
+      width: 50%;
+    }
+
+    .snd-ref-no {
+      text-align: end;
+      margin-top: 30px;
+      color: black;
+    }
+
+    .snd-sub-title {
+      font-size: 16px;
+      font-weight: 700;
+      padding-right: 40px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #bababa;
+    }
+
+    .snd-sub-content {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      width: 60%;
+    }
+
+    .snd-promotion-code {
+      text-align: center;
+      padding: 20px 0 20px 0;
+    }
+
+    .snd-sites {
+      display: flex; 
+      flex-direction: row; 
+      margin-top: 10px;
+    }
+
+    .snd-sites-text {
+      text-align: end; 
+      margin-left: 20px;
+    }
+
+    .snd-image-container {
+      object-fit: cover;
+      width: 130px;
+      height: 130px;
+    }
+
+    .snd-unit-item {
+      margin: 0px auto;
+      /* padding:40px;      */
+      background: #FFFFFF;
+      max-width: 640px;
+    }
+
+    .snd-card-detail-container {
+      width: 70%;
+      display: flex;
+      flex-direction: row;
+    }
+
+    .snd-card-booking-container {
+      width: 28%;
+      display: flex;
+      flex-direction: row;
+      justify-content: end;
+      align-items: center;
+    }
+
+    .snd-card-button {
+      justify-items: end;
+      padding: 0 40px;
+      border-radius: 14px;
+      text-align: center;
+      background-color: #EA5B21;
+      border: 0px;
+      color: white;
+      margin: 5% 0;
+      height: 50px;
+      cursor: pointer;
+    }
+
+    .snd-view-more-container {
+      display: flex;
+      padding-bottom: 20px;
+    }
+
+    .snd-view-more-button {
+      width: 70%;
+      padding: 20px 40px;
+      border-radius: 14px;
+      text-align: center;
+      color: #EA5B21;
+      background: #FFD8C8;
+      border: 0px;
+      margin: 20px 0;
+      cursor: pointer;
+    }
+
+    .snd-view-schedule-button {
+      padding: 15px 40px;
+      width: 50%;
+      border: 0;
+      background-color: transparent;
+      text-decoration: underline;
+    }
+
+    .snd-footer {
+      text-align: center;
+      margin: 0 auto;
+      background: #f5f5f5;
+
+    }
+
+    .snd-footer-company {
+      text-align: center;
+      margin: 20px 40px 0 40px;
+    }
+
+    .snd-footer-email {
+      padding: 10px 5px;
+    }
+
+    .snd-footer-list {
+      margin-top: 80px;
+      margin-bottom: 80px;
+    }
+
+    .snd-footer-sm {
+      display: none;
+    }
+
+    .snd-footer-md {
+      display: block;
+      padding-top: 1px;
+      color: black;
+    }
+
+    .snd-footer-border {
+      border-bottom: 1px solid rgba(0, 0, 0, 30%);
+      margin-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    .snd-link {
+      color: #00A0E3;
+      text-decoration: underline;
+      padding: 0 50px;
+    }
+
+    .snd-card-detail-price {
+      margin: 2% 0;
+      text-align: start;
+      justify-content: end;
+    }
+
+    .snd-image-container {
+      width: 80px;
+      height: 80px;
+    }
+
+    .snd-booking-image-container {
+      width: 55px;
+      height: 55px;
+      border-radius: 10px;
+      margin: 10px;
+    }
+
+    .snd-booking-detail {
+      width: 50%;
+      margin-top: 2%;
+    }
+
+    .snd-unit-detail-container {
+      width: 50%;
+      margin-top: 5%;
+    }
+
+    .snd-unit-detail-image {
+      width: 30%;
+    }
+
+    .snd-price {
+      margin: 20px 20px 0 0;
+      text-align: end;
+    }
+
+    .snd-display-ui {
+      display: none;
+    }
+
+    .snd-booking-space {
+      font-size: 12px;
+    }
+
+    .snd-display-sm {
+      display: none;
+    }
+
+    .snd-display-md {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .snd-promotion-img {
+      width: 15%;
+      margin-top: 31px;
+      margin-right: 13px;
+    }
+
+    .snd-footer-anchor {
+      color: #222222 !important;
+      text-decoration: none;
+    }
+
+    .snd-price-discount {
+      font-weight: bold;
+      color: #00A0E3;
+    }
+
+    .view-schedule-button {
+      text-align: center;
+      width: 100%;
+      margin-top: 30px;
+    }
+
+    .snd-additional-text {
+      margin-top: 100px;
+      font-size: 16px;
+    }
+
+    .snd-icon-social {
+      width: 19px;
+      height: 18px;
+    }
+
+    @media (max-device-width: 320px) and (max-device-width: 540px) {
+
+      /* Font Size */
+      .snd-org-font {
+        color: #EA5B21;
+        font-weight: bold;
+        font-size: 18px;
+      }
+
+      img {
+        width: 40px;
+      }
+
+      .snd-logo {
+        max-width: 200px;
+      }
+      
+      .snd-content-gray {
+        font-size: 33px;
+        color: #9E9E9E;
+      }
+
+      .snd-text-base {
+        font-size: 2.5rem;
+        font-weight: normal;
+      }
+
+      .snd-text-sm {
+        font-weight: 300;
+        color: #333333;
+        font-size: 10px;
+      }
+
+      .snd-ref-no {
+        margin-top: 0px;
+        margin-bottom: 30px;
+        text-align: start;
+        color: #9E9E9E;
+      }
+
+      .snd-column {
+        flex: 100%;
+        width: 100%;
+      }
+
+      .snd-image-container {
+        width: 70px;
+        height: 70px;
+        margin-right: 25px;
+      }
+
+      .snd-unit-detail-container {
+        margin: 15px 25px;
+        font-size: 12px;
+      }
+
+      .snd-main {
+        padding: 40px;
+        margin: 0 auto;
+        background-color: white;
+
+      }
+
+
+      .snd-sub-title {
+        font-size: 2rem;
+        font-weight: bold;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #bababa;
+      }
+
+      .snd-sub-content {
+        font-size: 12px;
+        padding-right: 40px;
+        padding-bottom: 10px;
+      }
+
+      .snd-card-promotion {
+        flex-direction: column;
+        text-align: center;
+        background: #FFD8C8;
+        border-radius: 20px;
+        font-weight: 300;
+      }
+
+      .snd-promotion-img {
+        width: 100%;
+        margin: 0;
+      }
+
+      .snd-card-button {
+        font-size: 12px;
+        padding: 0 10px;
+        border-radius: 12px;
+        text-align: center;
+        background-color: #EA5B21;
+        border: 0px;
+        color: white;
+        height: 50px;
+        width: 100%;
+        margin: 10px;
+      }
+
+      .snd-card-booking-container {
+        display: flex;
+        justify-items: center;
+        width: 100%;
+      }
+
+      .snd-card-detail-container {
+        width: 100%;
+      }
+
+      .snd-price {
+        margin: 30px 0;
+        text-align: end;
+      }
+    }
+
+    @media (max-device-width: 640px) {
+      .snd-main {
+        padding: 20px;
+        margin: 0 auto;
+        background-color: white;
+      }
+
+      .snd-image-container {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+
+      .snd-sites-sm {
+        margin-top: 40px;
+      }
+
+      .snd-sites-img {
+        width: 200px;
+        height: 200px;
+      }
+
+      .snd-logo {
+        max-width: 200px;
+      }
+            
+      .snd-content-gray {
+        font-size: 33px;
+        color: #000000;
+      }
+
+      .snd-footer-slash {
+        display: none;
+      }
+
+      .snd-title {
+        font-size: 105px;
+        padding-bottom: 15px;
+        line-height: 107px;
+      }
+
+      .snd-column {
+        flex: 100%;
+        max-width: 100%;
+      }
+
+      .snd-ref-no {
+        margin-top: 0px;
+        margin-bottom: 30px;
+        text-align: start;
+        color: #9E9E9E;
+      }
+
+      /* Font Size */
+      .snd-text-base {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+        font-weight: normal;
+      }
+
+      .snd-text-sm {
+        font-weight: 300;
+        color: #333333;
+        font-size: 2rem;
+        line-height: 2rem;
+      }
+
+      .snd-margin-bottom {
+        margin-bottom: 12px;
+      }
+
+      .snd-sub-title {
+        font-size: 2rem;
+        font-weight: 600;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #bababa;
+      }
+
+      .snd-sub-content {
+        font-size: 2rem;
+        padding-right: 40px;
+        padding-bottom: 10px;
+        width: 100%;
+      }
+
+      .snd-schedule-text {
+        font-size: 2rem;
+      }
+
+      .snd-card-promotion {
+        flex-direction: column;
+        text-align: center;
+        background: #FFD8C8;
+        border-radius: 20px;
+        font-weight: 300;
+      }
+
+      .snd-promotion-content {
+        padding: 0px 0px 20px;
+        margin: 0 40px 0 40px;
+      }
+      .snd-promotion-img {
+        width: 100%;
+      }
+      .snd-promotion-percent {
+        width: 150px;
+      }
+      
+      .snd-promotion-text{
+        width: 100%;
+      }
+
+      .snd-price-discount {
+        font-size: 2.5rem;
+      }
+
+      .view-schedule-button { 
+        width: 90%;
+      }
+
+      .snd-org-font {
+        font-weight: bold;
+        font-size: 2rem;
+      }
+
+      .snd-promotion-code {
+        padding: 10px 0 10px 0;
+      }
+
+      .snd-sites {
+        justify-content: space-between;
+      }
+
+      .snd-sites-text {
+        font-size: 2rem;
+      }
+
+      .snd-divide-y {
+        border-bottom: 1px solid #333333;
+      }
+
+      .snd-pd-bottom {
+        padding-bottom: 20px;
+      }
+
+      .snd-button {
+        width: 100%;
+        padding: 15px 0;
+        border-radius: 14px;
+        text-align: center;
+        background-color: #EA5B21;
+        border: 0px;
+        color: white;
+      }
+
+      .snd-unit-item {
+        margin: 0 auto;
+        width: 640px;
+      }
+
+      .snd-card-detail-container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+      }
+
+      .snd-card-booking-container {
+        text-align: center;
+        width: 100%;
+        display: block;
+      }
+
+      .snd-text-book-now {
+        padding: 23px 40px 50px 40px !important;
+        font-size: 1.5rem;
+        font-weight: 800;
+      }
+
+      .snd-text-booking-sm {
+        font-size: 2rem;
+        font-weight: 800;
+        padding: 40px;
+      }
+
+      .snd-card-button {
+        /* width: 70%; */
+        padding: 5px 40px;
+        border-radius: 14px;
+        text-align: center;
+        background-color: #EA5B21;
+        border: 0px;
+        color: white;
+        margin: 20px 0;
+      }
+
+      .snd-view-more-container {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .snd-view-more-button {
+        width: 100%;
+        padding: 15px 40px;
+        border-radius: 14px;
+        text-align: center;
+        color: #EA5B21;
+        background: #FFD8C8;
+        border: 0px;
+        margin: 20px 0;
+        cursor: pointer;
+      }
+
+      .snd-view-schedule-button {
+        padding: 15px 40px;
+        width: 100%;
+        border: 0;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+
+      .snd-link {
+        color: #00A0E3;
+        text-decoration: underline;
+        padding: 0 50px;
+      }
+
+      .snd-footer {
+        justify-items: center;
+        text-align: center;
+        margin: 40px;
+      }
+
+      .snd-footer-company {
+        margin: 20px 40px 0 40px;
+      }
+
+      .snd-footer-email {
+        padding: 15px 65px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .snd-footer-sm {
+        display: block;
+        color: black;
+      }
+
+      .snd-footer-md {
+        display: none;
+      }
+
+      .snd-card-detail-price {
+        margin: 5% 20px 0 0;
+        text-align: start;
+      }
+
+      .snd-booking-image-main {
+        width: 200px;
+      }
+
+      .snd-booking-image-container {
+        border-radius: 10px;
+        margin: 5% 10px;
+        width: 100%;
+        height: 100%;
+      }
+
+      .snd-booking-detail {
+        width: 50%;
+        margin-top: 5%;
+      }
+
+      .snd-unit-detail-container {
+        width: 50%;
+        margin: 5% 0 0 15%;
+      }
+
+      .snd-unit-detail-image {
+        width: 30%;
+      }
+
+      .snd-price {
+        margin: 10px 5px;
+        text-align: end;
+      }
+
+      .snd-display-ui {
+        display: block;
+      }
+
+      .snd-text-base,
+      .snd-booking-space {
+        font-size: 2rem;
+      }
+
+      .snd-display-sm {
+        display: block;
+      }
+
+      .snd-display-md {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .snd-additional-text {
+        font-size: 2rem;
+        line-height: 3rem;
+      }
+
+      .snd-footer-anchor {
+        font-size: 2rem;
+      }
+
+      .snd-icon-social {
+        width: 50px;
+        height: 50px;
+      }
+
+    }
+  </style>
+</head>
+
+<body class="body">
+  <div class="snd-container">
+    <div class="snd-body">
+
+      <div class="snd-main">
+        <div class="snd-row"  style="padding-top: 30px;padding-bottom: 30px;">
+          <div class="snd-logo-container">
+            <img src="http://www.nineteendesigns.com/email/snd/images/SND_logo.png" class="snd-logo" />
+          </div>
+        </div>
+        <div class="snd-space"></div>
+        <div class="snd-row">
+          {{#if is_quotation}}
+          <div class="snd-column snd-title">お見積り</div>
+          {{/if}}
+          {{#if is_reminder}}
+          <div class="snd-column snd-title">Your Space Next Door Quotation will expire soon! </div>
+          {{/if}}
+          {{#if is_rejected}}
+          <div class="snd-column snd-title">Sorry, your quotation has been expired!</div>
+          {{/if}}
+
+          <div class="snd-column snd-content-gray snd-ref-no">参照 No. {{ ref_number }}</div>
+        </div>
+        <div class="snd-text-base snd-margin-bottom">{{user_name}}様</div>
+
+        <div>
+          {{#if is_quotation}}
+          <div class="snd-text-base">
+            お客様のセルフストレージのニーズに基づき、私共より以下のオプションをお勧めさせていただきます。このお見積りは以下の情報に基づき作成されたものです：
+          </div>
+          {{/if}}
+          {{#if is_reminder}}
+          <div class="snd-text-base">
+            {{requested_date}}にお送り致しました見積り参照 no. {{ref_number}} の有効期間は7日間で、{{expiry_date_time}}まで有効となっております。 
+            <br>こちらの価格にてお申込みの際は、こちらのメールから直接ご予約ください。
+          </div>
+          {{/if}}
+          {{#if is_rejected}}
+          <div class="snd-text-base">
+            先日お送り致しました見積り参照 no. {{ref_number}} は{{expiry_date_time}}に失効しました。
+            新規お見積りをご要望の際は「もっと表示」を選択してください。トランクルーム施設ページに転送致します。
+            Space Next Door にご関心をお寄せいただきまして誠にありがとうございます。
+          </div>
+          {{/if}}
+        </div>
+
+        <div class="snd-row">
+          <div class="snd-column" style="margin-top: 40px">
+            <div class="snd-sub-title">件名</div>
+            <div class="snd-sub-content">Space Next Doorストレージに関するお問い合わせ - {{district_names}}</div>
+          </div>
+          <div class="snd-column" style="margin-top: 40px;">
+            <div class="snd-sub-title">日付</div>
+            <div class="snd-sub-content">{{created_at}}</div>
+          </div>
+        </div>
+
+        <div class="snd-row">
+          <div class="snd-column" style="margin-top: 40px">
+            <div class="snd-sub-title">搬入日</div>
+            <div class="snd-sub-content">{{move_in}}</div>
+          </div>
+          <div class="snd-column" style="margin-top: 40px">
+            <div class="snd-sub-title">退去日</div>
+            <div class="snd-sub-content">{{move_out}}</div>
+          </div>
+        </div>
+
+
+        <!-- Promotion box -->
+        {{#if is_rejected}}
+          <!-- Do not show promo box -->
+        {{else}}
+          <div class="snd-display-md snd-card-promotion">
+            <div class="snd-promotion-img">
+              <img src="https://static.spacenextdoor.com/icons/promotion-icon.png"  class="snd-promotion-percent"  />
+            </div>
+            <div class="snd-promotion-text">
+              <div class="snd-divide-y">
+                <span class="snd-text-sm">今、予約して節約！</span><br>
+                <span class="snd-org-font">10％追加で割引</span>
+                <div style="margin-bottom: 10px;"></div>
+              </div>
+              <div style="margin-bottom: 10px;"></div>
+              <div class="snd-pd-btm-5">
+                <span class="snd-text-sm">
+                  10％割引が精算時に自動的に適応されます。
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="snd-display-sm snd-divide-y" style="padding-bottom: 10px;">
+            <div>
+              <img src="https://static.spacenextdoor.com/icons/promotion-icon.png" width="30px" style="margin-top: 2%;" />
+              <span class="snd-org-font" style="padding-bottom: 10px;">10％追加で割引</span>
+            </div>
+            <span class="snd-text-sm">今、予約して節約！<br>
+              10％割引が精算時に自動的に適応されます。
+            </span>
+          </div> -->
+        {{/if}}
+
+        {{#each sites}}
+          <div class="snd-unit-item">
+            <div class="snd-row" style="margin-top: 25px">
+              <div class="snd-column">
+                <div class="snd-content snd-sub-title">ユニットの詳細</div>
+                <div class="snd-sites">
+                  <div class="snd-sites-img">
+                    <img class="snd-image-container" style="border-radius: 10px; margin: 10px 0 20px;"
+                      src="{{this.image}}" />
+                    <div class="snd-sites-text">{{this.name}}</div>
+                  </div>
+                </div>
+              </div>
+              <div class="snd-column">
+                <div class="snd-sub-title">ストレージユニット</div>
+                <div class="snd-sub-content" style="margin-top: 20px;">{{this.storage_unit}}</div>
+              </div>
+            </div>
+
+            <div class="snd-row" style="margin-top: 25px">
+              <div class="snd-column">
+                <div class="snd-sub-title">ユニットの住所</div>
+                <div class="snd-sub-content">{{this.address}}</div>
+              </div>
+              <div class="snd-column">
+                <div class="snd-sub-title">ユニットの設備</div>
+                <div class="snd-sub-content">
+                  {{this.site_amenities}}
+                </div>
+              </div>
+            </div>
+
+
+
+
+            {{#if this.is_multiple_spaces}}
+              {{#each this.spaces}}
+              <div class="snd-card">
+                <div class="snd-row">
+                  <div class="snd-card-detail-container">
+                    <div class="snd-booking-image-main">
+                      <img class="snd-booking-image-container"
+                        src="{{platform_space_type.icon}}" />
+                    </div>
+                    <div class="snd-booking-detail">
+                      <span class="snd-sub-content" style="font-weight: bold; padding: 0;">{{this.size}} {{this.size_unit}}</span><br
+                        class="display-ui">
+                      <span class="snd-booking-space">{{this.width}}{{this.measure_unit}} x
+                        {{this.height}}{{this.measure_unit}}<br>{{this.features_str}}</span>
+                    </div>
+                    <p class="snd-card-detail-price">
+                      <span class="snd-text-sm"
+                        style="text-decoration: line-through;">{{this.currency_sign}}{{this.price}}</span>
+                      <span class="snd-price-discount">{{this.currency_sign}}{{this.discount}}</span>
+                    </p>
+                  </div>
+
+                  {{#if ../../this.is_rejected}}
+                    <!-- DO NOT SHOW BOOK NOW IN REJECTED TEMPLATE -->
+                  {{else}}
+                    <div class="snd-card-booking-container">
+                      <a href="{{this.checkout_url}}">
+                        <button class="snd-card-button snd-text-book-now">今すぐ予約</button>
+                      </a>
+                    </div>
+                  {{/if}}
+
+                </div>
+              </div>
+              {{/each}}
+
+            {{else}}
+              {{#each this.spaces}}
+                <div class="snd-card" style="margin-top: 50px; margin-bottom: 50px;">
+                  <div class="snd-row">
+                    <div style="width: 70%; display: flex; flex-direction: row;">
+                      <div class="snd-unit-detail-image">
+                        <img class="snd-image-container" style="border-radius: 10px; margin: 10px;"
+                          src="{{platform_space_type.icon}}" />
+                      </div>
+                      <div class="snd-unit-detail-container">
+                        <span class="snd-sub-content" style="font-weight: bold; padding: 0;">{{this.size}} {{this.size_unit}}</span><br
+                          class="snd-display-ui">
+                        <span class="snd-booking-space">{{this.width}}{{this.measure_unit}} x
+                          {{this.height}}{{this.measure_unit}}<br>{{this.features_str}}</span>
+                      </div>
+                    </div>
+                    <div style="width: 30%;">
+                      <p class="snd-price">
+                        <span class="snd-text-sm"
+                          style="text-decoration: line-through;">{{this.currency_sign}}{{this.price}}</span>
+                        <span class="snd-price-discount">{{this.currency_sign}}{{this.discount}}</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {{#if ../../this.is_rejected}}
+                  <div style="margin-bottom: 15px;">
+                    <a href="{{this.details_url}}">
+                      <button class="snd-button snd-text-booking-sm">詳細をもっと表示する</button>
+                    </a>
+                  </div>
+                {{else}}
+                  <div>
+                    <a href="{{this.checkout_url}}">
+                      <button class="snd-button snd-text-booking-sm">今すぐ予約</button>
+                    </a>
+                  </div>
+                {{/if}}
+
+              {{/each}}
+            {{/if}}
+
+            {{#if this.is_multiple_spaces}}
+              <div class="snd-view-more-container">
+                <div style="width: 50%;text-align: center;">
+                  <a href="{{this.details_url}}" style="cursor: pointer;">
+                    <button class="snd-view-more-button snd-text-booking-sm" style="font-weight:bold;cursor:pointer;">詳細をもっと表示する</button>
+                  </a>
+                </div>
+                <div class="view-schedule-button snd-text-booking-sm" style="font-weight: bold;">
+                  <a href="{{this.details_url}}" style="cursor: pointer;color: #333333;">
+                    Schedule a viewing
+                  </a>
+                </div>
+              </div>
+            {{/if}}
+          </div>
+        {{/each}}
+        <!-- <div style="text-align: center; margin-top: 50px; border-top: 1px solid #bababa;">
+          <div style="padding-top: 15px;">See more prices</div>
+          <div class="snd-link">
+            Exdivlore storage around Ang Mo Kio</div>
+        </div> -->
+
+        <div class="snd-additional-text">
+          <div>追加メモ</div>
+          <ul>
+            <li>クレジットカード/デビットカードでのお支払いのみご利用いただけます。ストレージでの保管期間は自動で延長されます
+            </li>
+            <li>契約終了の際には、終了日の14日前までにお知らせください</li>
+            <li>保険パッケージは$3.00/月からご利用いただけます</li>
+            <li>運送サービスに関しましてはHo Yun Pte Ltd（9061 3538）の担当者アルビンまでお問い合わせください</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="snd-footer">
+        <div class="snd-footer-md">
+          <ul class="snd-row" style="margin: 30px 5%;">
+            <li style="list-style-type: none; width: 33%;">
+              <a class="snd-footer-anchor"href="https://help-center.spacenextdoor.com/en/collections/3106445-snd-platform-en#faq">FAQ</a>
+            </li>
+            <li style="width: 33%;">
+              <a class="snd-footer-anchor"href="https://help-center.spacenextdoor.com/en/articles/5525298-guest">お客様向け</a>
+            </li>
+            <li style="width: 33%;">
+              <a class="snd-footer-anchor"href="https://help-center.spacenextdoor.com/en/articles/5525247-host">ホスト向け</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="snd-footer-sm">
+          <div class="snd-footer-border">
+            <a class="snd-footer-anchor"href="https://help-center.spacenextdoor.com/en/collections/3106445-snd-platform-en#faq">FAQ</a>
+          </div>
+          <div class="snd-footer-border">
+            <a class="snd-footer-anchor"href="https://help-center.spacenextdoor.com/en/articles/5525298-guest">お客様向け</a>
+          </div>
+          <div class="snd-footer-border">
+            <a class="snd-footer-anchor"href="https://help-center.spacenextdoor.com/en/articles/5525247-host">ホスト向け</a>
+          </div>
+        </div>
+
+        <div class="snd-content-gray footer-company" style="color: #9E9E9E;">
+          © Copyright 2017. All rights reserved by Space Next Door.
+        </div>
+        <div class="snd-footer-email">
+          <a href="mailto:help@spacenextdoor.com" target="_blank" style="color: #222222;text-decoration: none;">
+            <span class="snd-booking-space">help@spacenextdoor.com</span>
+          </a>
+          <span class="snd-content-gray"> | </span>
+            <span class="snd-booking-space">+65 6353 9325</span>
+          <span class="snd-content-gray"> | </span>
+          <a class="Unsubscribe--unsubscribeLink" href="{{{unsubscribe}}}" target="_blank" style="font-family:sans-serif;text-decoration:none;">
+            <span class="snd-booking-space">配信停止</span>
+          </a>
+        </div>
+
+        <div class="snd-social-icon" style="margin-top: 20px;">
+          <svg class="snd-icon-social" viewBox="0 0 19 18" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <g id="Quotation-mobile" transform="translate(-94.000000, -2801.000000)" fill="#000000">
+                <g id="Group-4" transform="translate(9.000000, 15.000000)">
+                  <g id="Group-2" transform="translate(0.000000, 528.000000)">
+                    <g id="Group-5" transform="translate(0.000000, 754.000000)">
+                      <g id="Group-9" transform="translate(0.000000, 703.000000)">
+                        <g id="Group-footer" transform="translate(0.000000, 446.000000)">
+                          <g id="icon-instagram" transform="translate(85.000000, 355.000000)">
+                            <path
+                              d="M9.22073902,0 C6.71652333,0 6.40251727,0.0103604113 5.41906596,0.0541599433 C4.43759115,0.0978522986 3.76734066,0.250007443 3.18079828,0.472470482 C2.57445437,0.702471613 2.06023697,1.01021155 1.54763004,1.51054797 C1.03502311,2.01092011 0.719735997,2.51282845 0.484094197,3.10465802 C0.256138756,3.67712433 0.100288681,4.33136644 0.0554881902,5.28931151 C0.0106144955,6.24925721 0,6.55574675 0,9.00001786 C0,11.4442532 0.0106144955,11.7507428 0.0554881902,12.7106885 C0.100288681,13.6686336 0.256138756,14.3228757 0.484094197,14.895342 C0.719735997,15.4871715 1.03502311,15.9890799 1.54763004,16.489452 C2.06023697,16.9897884 2.57445437,17.2975284 3.18079828,17.5275295 C3.76734066,17.7499926 4.43759115,17.9021477 5.41906596,17.9458401 C6.40251727,17.9896753 6.71652333,18 9.22073902,18 C11.7249547,18 12.0389242,17.9896753 13.0224121,17.9458401 C14.0038869,17.9021477 14.6741374,17.7499926 15.2606798,17.5275295 C15.8670237,17.2975284 16.3812411,16.9897884 16.893848,16.489452 C17.4064549,15.9890799 17.721742,15.4871715 17.9573838,14.895342 C18.1853393,14.3228757 18.3411894,13.6686336 18.3859899,12.7106885 C18.4308635,11.7507428 18.4414414,11.4442532 18.4414414,9.00001786 C18.4414414,6.55574675 18.4308635,6.24925721 18.3859899,5.28931151 C18.3411894,4.33136644 18.1853393,3.67712433 17.9573838,3.10465802 C17.721742,2.51282845 17.4064549,2.01092011 16.893848,1.51054797 C16.3812411,1.01021155 15.8670237,0.702471613 15.2606798,0.472470482 C14.6741374,0.250007443 14.0038869,0.0978522986 13.0224121,0.0541599433 C12.0389242,0.0103604113 11.7249547,0 9.22073902,0 M9.22073902,1.62161872 C11.6827895,1.62161872 11.9743954,1.63080019 12.9466831,1.67409957 C13.8456943,1.71411219 14.3339245,1.86072987 14.6588745,1.98398304 C15.0892374,2.14724883 15.3964355,2.34227465 15.7190796,2.65723115 C16.0417236,2.97215193 16.241569,3.2719608 16.4088022,3.69205761 C16.5350781,4.00919338 16.6852915,4.48573657 16.726322,5.36322768 C16.7706833,6.31224136 16.7800533,6.59690259 16.7800533,9.00001786 C16.7800533,11.4030974 16.7706833,11.6877586 16.726322,12.6367723 C16.6852915,13.5142634 16.5350781,13.9908066 16.4088022,14.3079424 C16.241569,14.7280392 16.0417236,15.0278481 15.7190796,15.3427688 C15.3964355,15.6577254 15.0892374,15.8527512 14.6588745,16.016017 C14.3339245,16.1392701 13.8456943,16.2858878 12.9466831,16.3259004 C11.9745418,16.3691998 11.682936,16.3783813 9.22073902,16.3783813 C6.75854209,16.3783813 6.46693627,16.3691998 5.4947949,16.3259004 C4.59578373,16.2858878 4.10751694,16.1392701 3.78260357,16.016017 C3.35224068,15.8527512 3.04504254,15.6577254 2.72239848,15.3427688 C2.39975442,15.0278481 2.19990909,14.7280392 2.03263928,14.3079424 C1.90639999,13.9908066 1.75618658,13.5142634 1.71515606,12.6367723 C1.67079479,11.6877586 1.66142475,11.4030974 1.66142475,9.00001786 C1.66142475,6.59690259 1.67079479,6.31224136 1.71515606,5.36322768 C1.75618658,4.48573657 1.90639999,4.00919338 2.03263928,3.69205761 C2.19990909,3.2719608 2.39975442,2.97215193 2.72239848,2.65723115 C3.04504254,2.34227465 3.35224068,2.14724883 3.78260357,1.98398304 C4.10751694,1.86072987 4.59578373,1.71411219 5.49475829,1.67409957 C6.46708268,1.63080019 6.75868849,1.62161872 9.22073902,1.62161872"
+                              id="Fill-1"></path>
+                            <path
+                              d="M9.22072072,11.9210545 C7.56791909,11.9210545 6.22802253,10.6132614 6.22802253,9.00001739 C6.22802253,7.38673863 7.56791909,6.07894554 9.22072072,6.07894554 C10.8735223,6.07894554 12.2133833,7.38673863 12.2133833,9.00001739 C12.2133833,10.6132614 10.8735223,11.9210545 9.22072072,11.9210545 M9.22072072,4.5 C6.67450029,4.5 4.61036036,6.51470264 4.61036036,9.00001739 C4.61036036,11.4852974 6.67450029,13.5 9.22072072,13.5 C11.7669412,13.5 13.8310811,11.4852974 13.8310811,9.00001739 C13.8310811,6.51470264 11.7669412,4.5 9.22072072,4.5"
+                              id="Fill-4"></path>
+                            <path
+                              d="M15.5599662,4.5 C15.5599662,5.12133642 15.0439209,5.625 14.4073952,5.625 C13.7708313,5.625 13.254786,5.12133642 13.254786,4.5 C13.254786,3.87866358 13.7708313,3.375 14.4073952,3.375 C15.0439209,3.375 15.5599662,3.87866358 15.5599662,4.5"
+                              id="Fill-6"></path>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </svg>
+          <svg style="margin-left: 50px; margin-right: 50px;" class="snd-icon-social" viewBox="0 0 19 18"
+            version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <g id="Quotation-mobile" transform="translate(-149.000000, -2801.000000)" fill="#000000">
+                <g id="Group-4" transform="translate(9.000000, 15.000000)">
+                  <g id="Group-2" transform="translate(0.000000, 528.000000)">
+                    <g id="Group-5" transform="translate(0.000000, 754.000000)">
+                      <g id="Group-9" transform="translate(0.000000, 703.000000)">
+                        <g id="Group-footer" transform="translate(0.000000, 446.000000)">
+                          <g id="Social-Networks" transform="translate(85.000000, 355.000000)">
+                            <path
+                              d="M73.1921922,1.5 L73.1921922,17.2826087 C73.1921922,17.5677912 72.7559928,17.9935491 72.4572072,18 L68.0472973,18 L68.0472973,11.5434783 L70.2522523,11.5434783 L70.2522523,8.67391304 L68.0472973,8.67391304 L68.0472973,7.23913043 C67.7264814,6.31746135 67.9379721,5.80784205 68.7822823,5.80434783 L70.2522523,5.80434783 L70.2522523,3.65217391 C70.2114962,3.45327187 69.3787519,3.38231222 68.0472973,3.65217391 C66.3650106,3.38231222 64.9771034,4.59507713 65.1073574,6.52173913 L65.1073574,8.67391304 L62.9024024,8.67391304 L62.9024024,11.5434783 L65.1073574,11.5434783 L65.1073574,18 L56.2875375,18 C55.988752,18 55.5525526,17.5742421 55.5525526,17.2826087 L55.5525526,1.5 C55.5525526,1.20836659 55.988752,0.782608696 56.2875375,0.782608696 L72.4572072,0.782608696 C72.7559928,0.782608696 73.1921922,1.20191572 73.1921922,1.5 L73.1921922,1.5 Z"
+                              id="icon-fb"></path>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </svg>
+
+
+          <svg class="snd-icon-social" viewBox="0 0 22 18" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <g id="Quotation-mobile" transform="translate(-203.000000, -2801.000000)" fill="#000000">
+                <g id="Group-4" transform="translate(9.000000, 15.000000)">
+                  <g id="Group-2" transform="translate(0.000000, 528.000000)">
+                    <g id="Group-5" transform="translate(0.000000, 754.000000)">
+                      <g id="Group-9" transform="translate(0.000000, 703.000000)">
+                        <g id="Group-footer" transform="translate(0.000000, 446.000000)">
+                          <g id="Social-Networks" transform="translate(85.000000, 355.000000)">
+                            <path
+                              d="M130.591592,2.74109679 C129.825342,3.07144418 128.998279,3.29560848 128.134729,3.38999345 C129.022605,2.87087612 129.691553,2.06860389 130.019945,1.08935984 C129.192882,1.56128468 128.280681,1.91522832 127.307666,2.09220013 C126.529254,1.2899279 125.410287,0.782608696 124.181855,0.782608696 C121.822294,0.782608696 119.900589,2.64671182 119.900589,4.9355473 C119.900589,5.26589469 119.937077,5.57264584 120.010053,5.87939698 C116.458548,5.70242517 113.29625,4.05068822 111.192105,1.53768844 C110.827224,2.15119074 110.608296,2.859078 110.608296,3.62595587 C110.608296,5.06532663 111.362382,6.33952371 112.517838,7.08280533 C111.812402,7.05920909 111.155617,6.87043915 110.58397,6.56368801 L110.58397,6.61088049 C110.58397,8.61656107 112.055655,10.3036924 114.013848,10.6812322 C113.648968,10.7756172 113.271924,10.8228097 112.882718,10.8228097 C112.602976,10.8228097 112.335397,10.7992135 112.079981,10.752021 C112.627302,12.4037579 114.208451,13.6071663 116.081505,13.6307625 C114.621983,14.7397859 112.773254,15.4122788 110.766411,15.4122788 C110.425855,15.4122788 110.0853,15.3886825 109.744745,15.3532882 C111.642124,16.5331003 113.892221,17.2173913 116.300433,17.2173913 C124.169692,17.2173913 128.475284,10.8935984 128.475284,5.40747214 C128.475284,5.23050033 128.475284,5.05352851 128.463121,4.86475858 C129.290184,4.31024689 130.019945,3.57876338 130.591592,2.74109679 L130.591592,2.74109679 L130.591592,2.74109679 Z"
+                              id="icon-twitter"></path>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </div>
+      </div>
+
+    </div>
+</body>
+
+</html>

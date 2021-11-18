@@ -1,0 +1,944 @@
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="with=device-width, user-scalable=yes, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <style>
+    html {
+      font-family: "Poppins";
+      background-color: #f5f5f5;
+      margin: 0;
+    }
+
+    p span {
+      display: block;
+    }
+
+    .divide-y {
+      padding-bottom: 20px;
+      border-bottom: 1px solid black;
+    }
+
+    /* Font Size */
+    .text-base {
+      font-size: 1rem;
+      line-height: 1.5rem;
+      color: black;
+    }
+
+    .text-sm {
+      color: black;
+      font-size: 12px;
+      line-height: 1.5rem;
+      font-weight: 300px;
+    }
+
+    .text-lg {
+      font-size: 1.125rem;
+      line-height: 1.75rem;
+    }
+
+    .margin-bottom {
+      margin-bottom: 30px;
+    }
+
+    .main {
+      padding: 40px;
+      margin: 20px;
+      background-color: white;
+    }
+
+    .title {
+      font-size: 54px;
+      padding-bottom: 15px;
+    }
+
+    .border {
+      border-bottom: 1px solid black;
+    }
+
+    .content-gray {
+      font-size: 16px;
+      color: #9E9E9E;
+    }
+
+    .button {
+      width: 60%;
+      padding: 15px 0;
+      border-radius: 14px;
+      text-align: center;
+      background-color: #EA5B21;
+      border: 0px;
+      color: white;
+    }
+
+    .card {
+      border: 1px solid rgba(0, 0, 0, 0.26);
+      border-radius: 20px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+
+    .org-font {
+      color: #EA5B21;
+      font-weight: bold;
+      font-size: 28px;
+    }
+
+    .card-promotion {
+      flex-direction: row;
+      text-align: start;
+      font-weight: 300;
+      background: #FFD8C8;
+      border-radius: 20px;
+      padding: 20px 20px 0 20px;
+    }
+
+    .promotion-content {
+      text-align: start;
+      border-bottom: 1px solid black;
+      padding: 0 0 20px 40px;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 4px;
+    }
+
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+
+    .ref-no {
+      text-align: end;
+      margin-top: 30px;
+      color: black;
+    }
+
+    .sub-title {
+      font-size: 16px;
+      font-weight: 700;
+      padding-right: 40px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #bababa;
+    }
+
+    .sub-content {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      width: 60%;
+    }
+
+    .promotion-code {
+      text-align: center;
+      padding: 20px 0 20px 0;
+    }
+
+    .image-container {
+      object-fit: cover;
+      width: 130px;
+      height: 130px;
+    }
+
+    .unit-item {
+      margin-top: 80px;
+    }
+
+    .card-detail-container {
+      width: 70%;
+      display: flex;
+      flex-direction: row;
+    }
+
+    .card-booking-container {
+      width: 28%;
+      display: flex;
+      flex-direction: row;
+      justify-content: end
+    }
+
+    .card-button {
+      justify-items: end;
+      padding: 0 40px;
+      border-radius: 14px;
+      text-align: center;
+      background-color: #EA5B21;
+      border: 0px;
+      color: white;
+      margin: 5% 0;
+      height: 50px;
+    }
+
+    .view-more-container {
+      display: flex;
+      padding-bottom: 20px;
+    }
+
+    .view-more-button {
+      width: 50%;
+      padding: 15px 40px;
+      border-radius: 14px;
+      text-align: center;
+      color: #EA5B21;
+      background: #FFD8C8;
+      border: 0px;
+      margin: 20px 0;
+    }
+
+    .view-schedule-button {
+      padding: 15px 40px;
+      width: 50%;
+      border: 0;
+      background-color: transparent;
+      text-decoration: underline;
+    }
+
+    .footer {
+      text-align: center;
+      margin: 40px;
+    }
+
+    .footer-company {
+      text-align: center;
+      margin: 20px 40px 0 40px;
+    }
+
+    .footer-email {
+      padding: 10px 5px;
+    }
+
+    .footer-list {
+      margin-top: 80px;
+      margin-bottom: 80px;
+    }
+
+    .footer-sm {
+      display: none;
+    }
+
+    .footer-md {
+      display: block;
+      margin-top: 80px;
+      margin-bottom: 80px;
+    }
+
+    .footer-border {
+      border-bottom: 1px solid rgba(0, 0, 0, 30%);
+      margin-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    .link {
+      color: #00A0E3;
+      text-decoration: underline;
+      padding: 0 50px;
+    }
+
+    .card-detail-price {
+      margin: 2% 0;
+      text-align: start;
+      justify-content: end;
+    }
+
+    .image-container {
+      width: 80px;
+      height: 80px;
+    }
+
+    .booking-image-container {
+      width: 55px;
+      height: 55px;
+      border-radius: 10px;
+      margin: 10px;
+    }
+
+    .booking-detail {
+      width: 50%;
+      margin-top: 2%;
+    }
+
+    .unit-detail-container {
+      width: 50%;
+      margin-top: 5%;
+    }
+
+    .unit-detail-image {
+      width: 30%;
+    }
+
+    .price {
+      margin: 20px 20px 0 0;
+      text-align: end;
+    }
+
+    .display-ui {
+      display: none;
+    }
+
+    .booking-space {
+      font-size: 12px;
+    }
+
+    .display-sm {
+      display: none;
+    }
+
+    .display-md {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+        @media (max-device-width: 320px) and (max-device-width: 540px) {
+
+      /* Font Size */
+      .org-font {
+        color: #EA5B21;
+        font-weight: bold;
+        font-size: 18px;
+      }
+
+      img {
+        width: 40px;
+      }
+
+      .title {
+        font-size: 34px;
+      }
+
+      .text-base {
+        font-size: 12px;
+        font-weight: normal;
+      }
+
+      .text-sm {
+        font-weight: 300;
+        color: black;
+        font-size: 10px;
+      }
+
+      .ref-no {
+        margin-top: 0px;
+        margin-bottom: 30px;
+        text-align: start;
+        color: #9E9E9E;
+      }
+
+      .column {
+        flex: 100%;
+        max-width: 100%;
+      }
+
+      .image-container {
+        width: 70px;
+        height: 70px;
+        margin-right: 25px;
+      }
+
+      .unit-detail-container {
+        margin: 15px 25px;
+        font-size: 12px;
+      }
+
+      .main {
+        padding: 10px;
+        margin: 0px;
+        background-color: white;
+      }
+
+      .sub-title {
+        font-size: 14px;
+        font-weight: bold;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #bababa;
+      }
+
+      .sub-content {
+        font-size: 12px;
+        padding-right: 40px;
+        padding-bottom: 10px;
+      }
+
+      .card-promotion {
+        flex-direction: column;
+        text-align: center;
+        background: #FFD8C8;
+        border-radius: 20px;
+        font-weight: 300;
+      }
+
+      .promotion-img {
+        width: 15%;
+        margin: 0;
+      }
+
+      .card-button {
+        font-size: 12px;
+        padding: 0 10px;
+        border-radius: 12px;
+        text-align: center;
+        background-color: #EA5B21;
+        border: 0px;
+        color: white;
+        height: 50px;
+        width: 100%;
+        margin: 10px;
+      }
+
+      .card-booking-container {
+        display: flex;
+        justify-items: center;
+        width: 100%;
+      }
+
+      .card-detail-container {
+        width: 100%;
+      }
+
+      .price {
+        margin: 30px 0;
+        text-align: end;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .column {
+        flex: 100%;
+        max-width: 100%;
+      }
+
+      .ref-no {
+        margin-top: 0px;
+        margin-bottom: 30px;
+        text-align: start;
+        color: #9E9E9E;
+      }
+
+      /* Font Size */
+      .text-base {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-weight: normal;
+      }
+
+      .text-sm {
+        font-weight: 300;
+        color: black;
+        font-size: 12px;
+        line-height: 1.5rem;
+      }
+
+      .text-lg {
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+      }
+
+      .margin-bottom {
+        margin-bottom: 12px;
+      }
+
+      .sub-title {
+        font-weight: 600;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #bababa;
+      }
+
+      .sub-content {
+        font-size: 16px;
+        padding-right: 40px;
+        padding-bottom: 10px;
+      }
+
+      .card-promotion {
+        flex-direction: column;
+        text-align: center;
+        background: #FFD8C8;
+        border-radius: 20px;
+        font-weight: 300;
+      }
+
+      .promotion-content {
+        padding: 0px 0px 20px;
+        margin: 0 40px 0 40px;
+      }
+
+      .org-font {
+        font-weight: bold;
+        font-size: 18px;
+      }
+
+      .promotion-code {
+        padding: 10px 0 10px 0;
+      }
+
+      .divide-y {
+        padding: 0;
+        border-bottom: 1px solid black;
+      }
+
+      .image-container {
+        object-fit: cover;
+        width: 100px;
+        height: 100px;
+      }
+
+      .button {
+        width: 100%;
+        padding: 15px 0;
+        border-radius: 14px;
+        text-align: center;
+        background-color: #EA5B21;
+        border: 0px;
+        color: white;
+      }
+
+      .unit-item {
+        margin-top: 50px;
+      }
+
+      .card-detail-container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+      }
+
+      .card-booking-container {
+        text-align: center;
+        width: 100%;
+        display: block;
+      }
+
+      .card-button {
+        width: 70%;
+        padding: 5px 40px;
+        border-radius: 14px;
+        text-align: center;
+        background-color: #EA5B21;
+        border: 0px;
+        color: white;
+        margin: 20px 0;
+      }
+
+      .view-more-container {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .view-more-button {
+        width: 100%;
+        padding: 15px 40px;
+        border-radius: 14px;
+        text-align: center;
+        color: #EA5B21;
+        background: #FFD8C8;
+        border: 0px;
+        margin: 20px 0;
+      }
+
+      .view-schedule-button {
+        padding: 15px 40px;
+        width: 100%;
+        border: 0;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+
+      .link {
+        color: #00A0E3;
+        text-decoration: underline;
+        padding: 0 50px;
+      }
+
+      .footer {
+        justify-items: center;
+        text-align: center;
+        margin: 40px;
+      }
+
+      .footer-company {
+        margin: 20px 40px 0 40px;
+      }
+
+      .footer-email {
+        padding: 15px 65px;
+      }
+
+      .footer-sm {
+        display: block;
+      }
+
+      .footer-md {
+        display: none;
+      }
+
+      .card-detail-price {
+        margin: 5% 20px 0 0;
+        text-align: end;
+      }
+
+      .booking-image-container {
+        border-radius: 10px;
+        margin: 5% 10px;
+      }
+
+      .booking-detail {
+        width: 50%;
+        margin-top: 5%;
+      }
+
+      .unit-detail-container {
+        width: 50%;
+        margin: 10% 0 0 25%;
+      }
+
+      .unit-detail-image {
+        width: 20%;
+      }
+
+      .price {
+        margin: 30px 30px 0 0;
+        text-align: end;
+      }
+
+      .display-ui {
+        display: block;
+      }
+
+      .text-base,
+      .booking-space {
+        font-size: 12px;
+      }
+
+      .display-sm {
+        display: block;
+      }
+
+      .display-md {
+        display: none;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main">
+    <div class="row">
+      <div class="column title">Sorry, your quotation has been expired!</div>
+      <div class="column content-gray ref-no">Reference No. 143591</div>
+    </div>
+    <div class="text-base margin-bottom">Dear (User's name),</div>
+    <div>
+      <div class="text-base">
+        Your quotation for Reference no. 143591 has been expired on 21 May 2021
+        11.59 PM. Please select View more detail if you would like to request a new quotation
+        and see updated price, We will link to this faclility detail page. Hope you always have a
+        great time and thank you for interested to book storage with us.
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column" style="margin-top: 40px">
+        <div class="sub-title">Subject</div>
+        <div class="sub-content">Space Next Door Storage Enquiry - Ang Mo Kio</div>
+      </div>
+      <div class="column" style="margin-top: 40px;">
+        <div class="sub-title">Date</div>
+        <div class="sub-content">Friday, 14 May 2021 11:40:20 AM Singapore Standard Time</div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column" style="margin-top: 40px">
+        <div class="sub-title">Move In</div>
+        <div class="sub-content">1 Febaruary 2021</div>
+      </div>
+      <div class="column" style="margin-top: 40px">
+        <div class="sub-title">Move Out</div>
+        <div class="sub-content">-</div>
+      </div>
+    </div>
+
+    <div class="card-promotion">
+
+      <div class="display-md">
+        <div style="width: 15%; margin: auto;">
+          <img src="https://static.spacenextdoor.com/icons/promotion-icon.png" width="80px" />
+        </div>
+        <div class="divide-y" style="width: 80%;">
+          <span class="org-font">GET AN EXTRA 10% OFF</span>
+          <span class="text-sm">
+            on your first month's rental. BOOK NOW and save. Your 10% discount will be automatically applied at checkout
+          </span>
+        </div>
+      </div>
+
+      <div class="display-sm divide-y" style="padding-bottom: 10px;">
+        <div>
+          <img src="https://static.spacenextdoor.com/icons/promotion-icon.png" width="30px" style="margin-top: 2%;" />
+          <span class="org-font" style="padding-bottom: 10px;">GET AN EXTRA 10% OFF</span>
+        </div>
+        <span class="text-sm">on your first month's rental.<br>
+          BOOK NOW and save. Your 10% discount will be automatically applied at checkout
+        </span>
+      </div>
+      <div class="text-sm promotion-code" style="flex-direction: rox;">
+        Promo code:<span style="font-weight: bold;">SNDONLINE</span>
+      </div>
+    </div>
+
+    <div class="unit-item">
+      <div class="row" style="margin-top: 25px">
+        <div class="column">
+          <div class="content sub-title">Unit detail</div>
+          <div style="display: flex; flex-direction: row; margin-top: 10px;">
+            <img class="image-container" style="border-radius: 10px; margin: 10px 0 20px;"
+              src="https://resizer.spacenextdoor.com/eyJidWNrZXQiOiJzdGF0aWMtZGV2LnNwYWNlbmV4dGRvb3IuY29tIiwia2V5IjoidXBsb2Fkcy9zaXRlLzQxZTcxMWFkLTgxODEtNDI5MS1hM2Q0LTE4OWQ4YmIyY2YyMS5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozMDAsImZpdCI6ImNvdmVyIn19fQ==" />
+            <div style="margin-top: 10px; margin-left: 10px;">Loft Mackenzie Building</div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="sub-title">Stroage unit</div>
+          <div style="margin-top: 20px;">S 26 - 50 sqft</div>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top: 25px">
+        <div class="column">
+          <div class="sub-title">Unit address</div>
+          <div class="sub-content">4008/ 4009/ 4010, 4012 Ang Mo Kio Ave 10, Singapore 569628Kio</div>
+        </div>
+        <div class="column">
+          <div class="sub-title">Site amenities</div>
+          <div class="sub-content">
+            24 hours access, Loading dock, Lift access, CCTV, Step ladder, Security, Trollyes
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="card">
+      <div class="row">
+        <div class="card-detail-container">
+          <img class="booking-image-container" src="https://static.spacenextdoor.com/sizemodel/Size-XXS.jpg" />
+          <div class="booking-detail">
+            <span style="font-weight: bold; padding: 0;">31 sqft</span><br class="display-ui">
+            <span class="booking-space">4.82ft x 6.56ft<br>With AC</span>
+          </div>
+          <p class="card-detail-price">
+            <span class="text-sm" style="text-decoration: line-through;">S$208.76</span>
+            <span style="font-weight: bold; color: #00A0E3;">S$181.58</span>
+          </p>
+        </div>
+        <div class="card-booking-container">
+          <button class="card-button">BOOK NOW</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="row">
+        <div class="card-detail-container">
+          <img class="booking-image-container" src="https://static.spacenextdoor.com/sizemodel/Size-XXS.jpg" />
+          <div class="booking-detail">
+            <span style="font-weight: bold; padding: 0;">31 sqft</span><br class="display-ui">
+            <span class="booking-space">4.82ft x 6.56ft<br>With AC</span>
+          </div>
+          <p class="card-detail-price">
+            <span class="text-sm" style="text-decoration: line-through;">S$201.76</span>
+            <span style="font-weight: bold; color: #00A0E3;">S$181.58</span>
+          </p>
+        </div>
+        <div class="card-booking-container">
+          <button class="card-button">BOOK NOW</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="view-more-container">
+      <button class="view-more-button" style="font-weight: bold;">VIEW MORE DETAIL</button>
+      <button class="view-schedule-button" style="font-weight: bold;">Schedule a viewing</button>
+    </div>
+
+    <div class="unit-item">
+      <div class="row" style="margin-top: 25px">
+        <div class="column">
+          <div class="content sub-title">Unit detail</div>
+          <div style="display: flex; flex-direction: row; margin-top: 10px;">
+            <img class="image-container" style="border-radius: 10px; margin: 10px 0 20px;"
+              src="https://resizer.spacenextdoor.com/eyJidWNrZXQiOiJzdGF0aWMtZGV2LnNwYWNlbmV4dGRvb3IuY29tIiwia2V5IjoidXBsb2Fkcy9zaXRlLzQxZTcxMWFkLTgxODEtNDI5MS1hM2Q0LTE4OWQ4YmIyY2YyMS5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozMDAsImZpdCI6ImNvdmVyIn19fQ==" />
+            <div style="margin-top: 10px; margin-left: 10px;">Loft Mackenzie Building</div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="sub-title">Stroage unit</div>
+          <div style="margin-top: 20px;">S 26 - 50 sqft</div>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top: 25px">
+        <div class="column">
+          <div class="sub-title">Unit address</div>
+          <div class="sub-content">4008/ 4009/ 4010, 4012 Ang Mo Kio Ave 10, Singapore 569628Kio</div>
+        </div>
+        <div class="column">
+          <div class="sub-title">Site amenities</div>
+          <div class="sub-content">
+            24 hours access, Loading dock, Lift access, CCTV, Step ladder, Security, Trollyes
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top: 50px; margin-bottom: 50px;">
+        <div class="row">
+          <div style="width: 70%; display: flex; flex-direction: row;">
+            <div class="unit-detail-image">
+              <img class="image-container" style="border-radius: 10px; margin: 10px;"
+                src="https://static.spacenextdoor.com/sizemodel/Size-XXS.jpg" />
+            </div>
+            <div class="unit-detail-container">
+              <span>31 sqft 4.82ft x 6.56ft With AC</span>
+            </div>
+          </div>
+          <div style="width: 30%;">
+            <p class="price">
+              <span class="text-sm" style="text-decoration: line-through;">S$201.76</span>
+              <span style="font-weight: bold; color: #00A0E3;">S$181.58</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-button">
+        <button class="button" onclick="()=> {}">BOOK NOW</button>
+      </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 50px; border-top: 1px solid #bababa;">
+      <div style="padding-top: 15px;">See more prices</div>
+      <div class="link">
+        Exdivlore storage around Ang Mo Kio</div>
+    </div>
+
+    <div style="margin-top: 100px; font-size: 16px;">
+      <div>Additional notes</div>
+      <ul>
+        <li>Credit/debit cards are the only payment modes accepted The storage period will be Extended automatically
+        </li>
+        <li>Termination requires 14 days’ notice</li>
+        <li>Insurance package starts from $3.00/month</li>
+        <li>For moving services, kindly contact Alvin (Ho Yun Pte Ltd) at 9061 3538.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer-md">
+      <ul class="row" style="margin: 30px 5%;">
+        <li style="list-style-type: none; width: 33%;">FAQ</li>
+        <li style="width: 33%;">For Guest</li>
+        <li style="width: 33%;">For Host</li>
+      </ul>
+    </div>
+
+    <div class="footer-sm">
+      <div class="footer-border">FAQ</div>
+      <div class="footer-border">For Guest</div>
+      <div class="footer-border">For Host</div>
+    </div>
+
+    <div class="content-gray footer-company">
+      © Copyright 2017. All rights reserved by Space Next Door.
+    </div>
+    <div class="footer-email">
+      help@spacenextdoor.com<span class="content-gray"> | </span>
+      +65 6353 9325<span class="content-gray"> | </span>Unsubscribe
+    </div>
+
+    <div class="social-icon" style="margin-top: 20px;">
+      <svg width="19px" height="18px" viewBox="0 0 19 18" version="1.1" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink">
+        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <g id="Quotation-mobile" transform="translate(-94.000000, -2801.000000)" fill="#000000">
+            <g id="Group-4" transform="translate(9.000000, 15.000000)">
+              <g id="Group-2" transform="translate(0.000000, 528.000000)">
+                <g id="Group-5" transform="translate(0.000000, 754.000000)">
+                  <g id="Group-9" transform="translate(0.000000, 703.000000)">
+                    <g id="Group-footer" transform="translate(0.000000, 446.000000)">
+                      <g id="icon-instagram" transform="translate(85.000000, 355.000000)">
+                        <path
+                          d="M9.22073902,0 C6.71652333,0 6.40251727,0.0103604113 5.41906596,0.0541599433 C4.43759115,0.0978522986 3.76734066,0.250007443 3.18079828,0.472470482 C2.57445437,0.702471613 2.06023697,1.01021155 1.54763004,1.51054797 C1.03502311,2.01092011 0.719735997,2.51282845 0.484094197,3.10465802 C0.256138756,3.67712433 0.100288681,4.33136644 0.0554881902,5.28931151 C0.0106144955,6.24925721 0,6.55574675 0,9.00001786 C0,11.4442532 0.0106144955,11.7507428 0.0554881902,12.7106885 C0.100288681,13.6686336 0.256138756,14.3228757 0.484094197,14.895342 C0.719735997,15.4871715 1.03502311,15.9890799 1.54763004,16.489452 C2.06023697,16.9897884 2.57445437,17.2975284 3.18079828,17.5275295 C3.76734066,17.7499926 4.43759115,17.9021477 5.41906596,17.9458401 C6.40251727,17.9896753 6.71652333,18 9.22073902,18 C11.7249547,18 12.0389242,17.9896753 13.0224121,17.9458401 C14.0038869,17.9021477 14.6741374,17.7499926 15.2606798,17.5275295 C15.8670237,17.2975284 16.3812411,16.9897884 16.893848,16.489452 C17.4064549,15.9890799 17.721742,15.4871715 17.9573838,14.895342 C18.1853393,14.3228757 18.3411894,13.6686336 18.3859899,12.7106885 C18.4308635,11.7507428 18.4414414,11.4442532 18.4414414,9.00001786 C18.4414414,6.55574675 18.4308635,6.24925721 18.3859899,5.28931151 C18.3411894,4.33136644 18.1853393,3.67712433 17.9573838,3.10465802 C17.721742,2.51282845 17.4064549,2.01092011 16.893848,1.51054797 C16.3812411,1.01021155 15.8670237,0.702471613 15.2606798,0.472470482 C14.6741374,0.250007443 14.0038869,0.0978522986 13.0224121,0.0541599433 C12.0389242,0.0103604113 11.7249547,0 9.22073902,0 M9.22073902,1.62161872 C11.6827895,1.62161872 11.9743954,1.63080019 12.9466831,1.67409957 C13.8456943,1.71411219 14.3339245,1.86072987 14.6588745,1.98398304 C15.0892374,2.14724883 15.3964355,2.34227465 15.7190796,2.65723115 C16.0417236,2.97215193 16.241569,3.2719608 16.4088022,3.69205761 C16.5350781,4.00919338 16.6852915,4.48573657 16.726322,5.36322768 C16.7706833,6.31224136 16.7800533,6.59690259 16.7800533,9.00001786 C16.7800533,11.4030974 16.7706833,11.6877586 16.726322,12.6367723 C16.6852915,13.5142634 16.5350781,13.9908066 16.4088022,14.3079424 C16.241569,14.7280392 16.0417236,15.0278481 15.7190796,15.3427688 C15.3964355,15.6577254 15.0892374,15.8527512 14.6588745,16.016017 C14.3339245,16.1392701 13.8456943,16.2858878 12.9466831,16.3259004 C11.9745418,16.3691998 11.682936,16.3783813 9.22073902,16.3783813 C6.75854209,16.3783813 6.46693627,16.3691998 5.4947949,16.3259004 C4.59578373,16.2858878 4.10751694,16.1392701 3.78260357,16.016017 C3.35224068,15.8527512 3.04504254,15.6577254 2.72239848,15.3427688 C2.39975442,15.0278481 2.19990909,14.7280392 2.03263928,14.3079424 C1.90639999,13.9908066 1.75618658,13.5142634 1.71515606,12.6367723 C1.67079479,11.6877586 1.66142475,11.4030974 1.66142475,9.00001786 C1.66142475,6.59690259 1.67079479,6.31224136 1.71515606,5.36322768 C1.75618658,4.48573657 1.90639999,4.00919338 2.03263928,3.69205761 C2.19990909,3.2719608 2.39975442,2.97215193 2.72239848,2.65723115 C3.04504254,2.34227465 3.35224068,2.14724883 3.78260357,1.98398304 C4.10751694,1.86072987 4.59578373,1.71411219 5.49475829,1.67409957 C6.46708268,1.63080019 6.75868849,1.62161872 9.22073902,1.62161872"
+                          id="Fill-1"></path>
+                        <path
+                          d="M9.22072072,11.9210545 C7.56791909,11.9210545 6.22802253,10.6132614 6.22802253,9.00001739 C6.22802253,7.38673863 7.56791909,6.07894554 9.22072072,6.07894554 C10.8735223,6.07894554 12.2133833,7.38673863 12.2133833,9.00001739 C12.2133833,10.6132614 10.8735223,11.9210545 9.22072072,11.9210545 M9.22072072,4.5 C6.67450029,4.5 4.61036036,6.51470264 4.61036036,9.00001739 C4.61036036,11.4852974 6.67450029,13.5 9.22072072,13.5 C11.7669412,13.5 13.8310811,11.4852974 13.8310811,9.00001739 C13.8310811,6.51470264 11.7669412,4.5 9.22072072,4.5"
+                          id="Fill-4"></path>
+                        <path
+                          d="M15.5599662,4.5 C15.5599662,5.12133642 15.0439209,5.625 14.4073952,5.625 C13.7708313,5.625 13.254786,5.12133642 13.254786,4.5 C13.254786,3.87866358 13.7708313,3.375 14.4073952,3.375 C15.0439209,3.375 15.5599662,3.87866358 15.5599662,4.5"
+                          id="Fill-6"></path>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+      <svg style="margin-left: 50px; margin-right: 50px;" width="19px" height="18px" viewBox="0 0 19 18" version="1.1"
+        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <g id="Quotation-mobile" transform="translate(-149.000000, -2801.000000)" fill="#000000">
+            <g id="Group-4" transform="translate(9.000000, 15.000000)">
+              <g id="Group-2" transform="translate(0.000000, 528.000000)">
+                <g id="Group-5" transform="translate(0.000000, 754.000000)">
+                  <g id="Group-9" transform="translate(0.000000, 703.000000)">
+                    <g id="Group-footer" transform="translate(0.000000, 446.000000)">
+                      <g id="Social-Networks" transform="translate(85.000000, 355.000000)">
+                        <path
+                          d="M73.1921922,1.5 L73.1921922,17.2826087 C73.1921922,17.5677912 72.7559928,17.9935491 72.4572072,18 L68.0472973,18 L68.0472973,11.5434783 L70.2522523,11.5434783 L70.2522523,8.67391304 L68.0472973,8.67391304 L68.0472973,7.23913043 C67.7264814,6.31746135 67.9379721,5.80784205 68.7822823,5.80434783 L70.2522523,5.80434783 L70.2522523,3.65217391 C70.2114962,3.45327187 69.3787519,3.38231222 68.0472973,3.65217391 C66.3650106,3.38231222 64.9771034,4.59507713 65.1073574,6.52173913 L65.1073574,8.67391304 L62.9024024,8.67391304 L62.9024024,11.5434783 L65.1073574,11.5434783 L65.1073574,18 L56.2875375,18 C55.988752,18 55.5525526,17.5742421 55.5525526,17.2826087 L55.5525526,1.5 C55.5525526,1.20836659 55.988752,0.782608696 56.2875375,0.782608696 L72.4572072,0.782608696 C72.7559928,0.782608696 73.1921922,1.20191572 73.1921922,1.5 L73.1921922,1.5 Z"
+                          id="icon-fb"></path>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+
+
+      <svg width="22px" height="18px" viewBox="0 0 22 18" version="1.1" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink">
+        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <g id="Quotation-mobile" transform="translate(-203.000000, -2801.000000)" fill="#000000">
+            <g id="Group-4" transform="translate(9.000000, 15.000000)">
+              <g id="Group-2" transform="translate(0.000000, 528.000000)">
+                <g id="Group-5" transform="translate(0.000000, 754.000000)">
+                  <g id="Group-9" transform="translate(0.000000, 703.000000)">
+                    <g id="Group-footer" transform="translate(0.000000, 446.000000)">
+                      <g id="Social-Networks" transform="translate(85.000000, 355.000000)">
+                        <path
+                          d="M130.591592,2.74109679 C129.825342,3.07144418 128.998279,3.29560848 128.134729,3.38999345 C129.022605,2.87087612 129.691553,2.06860389 130.019945,1.08935984 C129.192882,1.56128468 128.280681,1.91522832 127.307666,2.09220013 C126.529254,1.2899279 125.410287,0.782608696 124.181855,0.782608696 C121.822294,0.782608696 119.900589,2.64671182 119.900589,4.9355473 C119.900589,5.26589469 119.937077,5.57264584 120.010053,5.87939698 C116.458548,5.70242517 113.29625,4.05068822 111.192105,1.53768844 C110.827224,2.15119074 110.608296,2.859078 110.608296,3.62595587 C110.608296,5.06532663 111.362382,6.33952371 112.517838,7.08280533 C111.812402,7.05920909 111.155617,6.87043915 110.58397,6.56368801 L110.58397,6.61088049 C110.58397,8.61656107 112.055655,10.3036924 114.013848,10.6812322 C113.648968,10.7756172 113.271924,10.8228097 112.882718,10.8228097 C112.602976,10.8228097 112.335397,10.7992135 112.079981,10.752021 C112.627302,12.4037579 114.208451,13.6071663 116.081505,13.6307625 C114.621983,14.7397859 112.773254,15.4122788 110.766411,15.4122788 C110.425855,15.4122788 110.0853,15.3886825 109.744745,15.3532882 C111.642124,16.5331003 113.892221,17.2173913 116.300433,17.2173913 C124.169692,17.2173913 128.475284,10.8935984 128.475284,5.40747214 C128.475284,5.23050033 128.475284,5.05352851 128.463121,4.86475858 C129.290184,4.31024689 130.019945,3.57876338 130.591592,2.74109679 L130.591592,2.74109679 L130.591592,2.74109679 Z"
+                          id="icon-twitter"></path>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </div>
+  </div>
+
+</body>
+
+</html>
